@@ -102,6 +102,18 @@
              
 				</section>
                 
+                <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Start container</h2>
+                    <h4>mariadb</h4>
+                    <p>
+						<small>docker run -d -p 3306:3306 -p 2227:22 --name mariadb registry_server/mariadb10.1.11</small>
+					</p>
+                    <h4>app</h4>
+                    <p>
+						<small>docker run -d -p 2228:22 -p 9080:9080 --name messageapi --link mariadb:db registry_server/message-api</small>
+					</p>
+				</section>
+                
                 
                 
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
