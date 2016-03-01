@@ -53,7 +53,7 @@
 					<ul>
 						<li>GMOクリックHD</li>
 						<li>ヨウ　チョウヨウ</li>
-						<li>インフラエンジニアから開発エンジニア</li>
+						<li>インフラエンジニアから開発エンジニアに</li>
 						<li>Docker初心者です～</li>
 					</ul>
 				</section>
@@ -63,7 +63,7 @@
 					<ul>
                         <li>https://docs.docker.com/</li>
 						<li>インストール</li>
-						<li>dockerコマンド</li>
+						<li>dockerコマンド（docker run, docker images, docker ps -a　etc)</li>
 						<li>docker images,container, registry</li>
 						<li>dockerfile</li>
 					</ul>
@@ -105,10 +105,52 @@
                 
                 
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>いろいろ</h2>
-                    <li>CentOS6.5にインストールしてkernel panic発生し、起動失敗、CentOS6.7でOK</li>
+					<h2>Install</h2>
+                    <ul>
+                        <li>CentOS6.5にインストールしてkernel panic発生</li>
+                        <li>CentOS6.7でOK</li>
+                    </ul>
                     
 				</section>
+
+                <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>よく使うコマンド</h2>
+                    <ul>
+                        <li>docker images</li>                   
+                        <li>docker ps -a</li>
+                        <li>docker run</li>
+                        <li>docker build --no-cache .</li>
+                        <li>docker tag imageid imagename</li>
+                        <li>docker start[stop] container</li>
+                        <li>docker pull</li>
+                        <li>docker push</li>
+                        <li>docker rm container</li>
+                        <li>docker rmi image</li>
+                    </ul>
+				</section>
+
+                <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>dockerfile</h2>
+                    <ul>
+                        <li>関連処理を一つのRUNコマンドに書きましょう</li>                   
+                        <li>dockerfileからbuildの時に、--no-cacheを使いましょう</li>
+                        <li>CMDコマンドで、いろいろ処理をするときに、シェルを書きましょう</li>
+                    </ul>
+				</section>
+                
+                <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Docker compose</h2>
+                    <h3>docker-compose.yml</h3>
+                    <img src="./compose.png" />
+                    <h3>よく使うコマンド</h3>
+                    <ul>
+                        <li>docker-compose up [-d]</li>      
+                        <li>docker-compose start[stop]</li>             
+                        <li>docker-compose logs</li>
+                        <li>docker-compose rm</li>
+                    </ul>
+				</section>
+                
 
 
 
