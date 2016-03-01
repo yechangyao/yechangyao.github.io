@@ -139,6 +139,8 @@
                         <li>docker push</li>
                         <li>docker rm container</li>
                         <li>docker rmi image</li>
+                        <li>docker ps -a | grep none | awk '{print $1}' | xargs docker rm</li>
+                        <li>docker images | grep none | awk '{print $3}' | xargs docker rmi</li>
                     </ul>
 				</section>
 
