@@ -108,13 +108,11 @@
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>Start container</h2>
                     <h4>mariadb</h4>
-                    <li>
-						<small>docker run -d -p 3306:3306 -p 2227:22 --name mariadb registry_server/mariadb10.1.11</small>
-					</li>
+					<small>docker run -d -p 3306:3306 -p 2227:22 --name mariadb registry_server/mariadb10.1.11</small>
                     <h4>app</h4>
-                    <li>
-						<small>docker run -d -p 2228:22 -p 9080:9080 --name messageapi --link mariadb:db registry_server/message-api</small>
-					</li>
+                    
+					<small>docker run -d -p 2228:22 -p 9080:9080 --name messageapi --link mariadb:db registry_server/message-api</small>
+					
 				</section>
                 
                 
@@ -166,9 +164,9 @@
                     </ul>
 				</section>
                 
-				<section style="text-align: left;">
+				<section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h1>THE END</h1>
-					<h2>Thank you</h2>
+					<h2>Thank you!</h2>
 				</section>
 
 			</div>
