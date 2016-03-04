@@ -54,7 +54,7 @@
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>自己紹介</h2>
                     <img src="./gmoclick.png" />
-					<ul align="left">
+					<ul>
 						<li>GMOクリックHD</li>
 						<li>ヨウ　チョウヨウ</li>
 						<li>インフラエンジニアから開発エンジニアに</li>
@@ -64,7 +64,7 @@
 
                 <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>Docker基礎から勉強</h2>
-					<ul align="left">
+					<ul>
                         <li>https://docs.docker.com/</li>
 						<li>インストール</li>
 						<li>dockerコマンド（docker run, docker images, docker ps -a　etc)</li>
@@ -75,7 +75,7 @@
 
                 <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>実際にやってみる</h2>
-					<ul align="left">
+					<ul>
 						<li>Scala</li>
 						<li>Play2.4</li>
 						<li>MariaDB</li>
@@ -109,10 +109,10 @@
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>Start container</h2>
                     <h4>mariadb</h4>
-					<small align="left">docker run -d -p 3306:3306 -p 2227:22 --name mariadb registry_server/mariadb10.1.11</small>
+					<small >docker run -d -p 3306:3306 -p 2227:22 --name mariadb registry_server/mariadb10.1.11</small>
                     <h4>app</h4>
                     
-					<small align="left">docker run -d -p 2228:22 -p 9080:9080 --name messageapi --link mariadb:db registry_server/message-api</small>
+					<small >docker run -d -p 2228:22 -p 9080:9080 --name messageapi --link mariadb:db registry_server/message-api</small>
 					
 				</section>
                 
@@ -120,7 +120,7 @@
                 
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>Install</h2>
-                    <ul align="left">
+                    <ul>
                         <li>CentOS6.5にインストールしてkernel panic発生</li>
                         <li>CentOS6.7でOK</li>
                     </ul>
@@ -129,7 +129,7 @@
 
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>よく使うコマンド</h2>
-                    <ul align="left">
+                    <ul>
                         <li>docker images</li>                   
                         <li>docker ps -a</li>
                         <li>docker run</li>
@@ -147,7 +147,7 @@
 
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>dockerfile</h2>
-                    <ul align="left">
+                    <ul>
                         <li>関連処理を一つのRUNコマンドに書きましょう</li>                   
                         <li>dockerfileからbuildの時に、--no-cacheを使いましょう</li>
                         <li>CMDコマンドで、いろいろ処理をしたい時は、シェルを書きましょう</li>
@@ -163,7 +163,7 @@
                 <section  data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
 					<h2>Docker compose</h2>
                     <h3>よく使うコマンド</h3>
-                    <ul align="left">
+                    <ul>
                         <li>docker-compose up [-d]</li>      
                         <li>docker-compose ps</li>             
                         <li>docker-compose logs</li>
